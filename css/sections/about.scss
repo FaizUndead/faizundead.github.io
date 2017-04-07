@@ -1,0 +1,72 @@
+
+.about__left {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.about__pic {
+    display: inline-block;
+    border: 3px solid #fff;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.about__pic-item {
+    max-width: 220px;
+    max-height: 220px;
+    display: block;
+}
+
+.about__right {
+    width: 56%;
+    float: right;
+}
+
+.text-block {
+    color: #646464;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.about__text {
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+
+.text-block p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.about__download {
+    text-align: right;
+}
+
+.about__download-link {
+    padding: 9px 12px;
+    border: 2px solid #e85f61;
+    color: #e85f61;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    font-family: 'fira_sansbold';
+}
+
+.about__download-link-icon {
+    margin-right: 5px;
+}
+
+.about__download-link:hover {
+    color: #fff;
+    background: #e85f61;
+}
+.content-title {
+    font-family: 'fira_sansbold';
+}

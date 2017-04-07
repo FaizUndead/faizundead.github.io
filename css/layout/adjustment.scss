@@ -1,0 +1,65 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'fira_sansregular', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #f6f6f6;
+    line-height: 1.42;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    min-width: 960px; //НА АДАПТИВЕ ВСЕРАВНО ОТМЕНЯТЬ ПРИДЕТСЯ СТАТИКА ОНЛИ!
+}
+
+.wrapper:after {             //По идее чтобы прибить футер
+    content: "";
+    height: 50px;
+    display: block;
+}
+
+footer {
+    background: #414141;
+    height: 50px;
+    margin-top: -50px;
+    position: relative;
+    min-width: 960px;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

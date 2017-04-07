@@ -1,0 +1,149 @@
+.header {
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.container {
+  /* position: relative; */
+}
+
+.header .container {
+  height: 80px;
+  position: relative;
+}
+
+.header__left, .header__right {
+  float: left;
+  width: 50%;
+}
+
+.user {
+  margin-top: 10px;
+}
+
+.user__avatar {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.user__avatar-pic {
+  display: block;
+}
+
+.user__name {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 250px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.header__right {
+  text-align: right;
+}
+
+.contacts {
+  margin-top: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+.contacts:hover .contacts__trigger {
+  background: url("../img/decor/dotted-border-hover.png") 0 bottom repeat-x;
+  color: #e85f61;
+}
+
+.contacts:hover .contacts__dropdown {
+  display: block;
+}
+
+.contacts__dropdown {
+  padding: 15px 20px;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  z-index: 10;
+  margin-top: 12px;
+  display: none;
+}
+
+.contacts__dropdown:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px;
+  top: -28px;
+}
+
+.contacts__dropdown-triangle {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 20px;
+}
+
+.contacts__dropdown-triangle:after, .contacts__dropdown-triangle:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-width: 0px;
+  top: 0px;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%);
+}
+
+.contacts__dropdown-triangle:before {
+  border-bottom-color: #dedede;
+}
+
+.contacts__dropdown-triangle:after {
+  border-bottom-color: #fff;
+  margin-top: 1px;
+}
+
+.contacts__dropdown-link {
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: "fira_sanslight";
+  color: #414141;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.contacts__dropdown-icon {
+  color: #33c1e3;
+  margin-right: 15px;
+}
+
+.contacts__dropdown-item {
+  margin-bottom: 15px;
+}
+
+.contacts__dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__trigger {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #33c1e3;
+  background: url("../img/decor/dotted-border.png") 0 bottom repeat-x;
+}
